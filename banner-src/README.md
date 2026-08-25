@@ -15,8 +15,8 @@ logical pixels with a 2x device scale factor, then downscaled to 2000x625.
 To rebuild:
 
 ```sh
-python3 topo.py
-# inline topo.svg into banner.html at the TOPO_SVG marker, then:
+# banner.html already carries topo.svg inlined. Regenerate it only if you want
+# a different terrain: python3 topo.py, then paste topo.svg into the .topo div.
 "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" \
   --headless=new --disable-gpu --hide-scrollbars --allow-file-access-from-files \
   --force-device-scale-factor=2 --window-size=1600,500 --virtual-time-budget=8000 \
