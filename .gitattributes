@@ -1,0 +1,4 @@
+# This repo is a profile cover, not a codebase. Keep Linguist from labelling it
+# "HTML" because of the banner render source.
+banner-src/** linguist-documentation
+assets/** linguist-documentation
