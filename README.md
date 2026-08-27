@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="assets/banner.png" alt="Freddy Ñañez. Builder. From Pilpichaca, Peru, to the world." width="100%">
+  <img src="assets/banner.svg" alt="Freddy Ñañez. Builder. From Pilpichaca, Peru, to the world." width="100%">
 </div>
 
 <div align="center">
@@ -31,8 +31,6 @@ I want to talk to people who are building something. Especially if they're start
 | **Sift** | An autonomous sourcing agent. A 7-stage AI pipeline that processed 304 real purchase requests across 6 languages, 19 countries, and 3 currencies. Built in 36 hours. | START Hack 2026, St. Gallen |
 | **LuzIA** | An emotional-support AI companion built on psychological frameworks, with red-flag detection that escalates by a safety manual. | 2nd place of 800+, National AI Hackathon |
 | **AI Chat Freddy** | A chatbot trained on my story. Ask it anything you want to know about me. | [Live](https://ai-chat-freddy.vercel.app/) |
-
-> Most of my repositories are private. Client work, and products still in progress. The links above are the things you can open and use today.
 
 <br>
 
