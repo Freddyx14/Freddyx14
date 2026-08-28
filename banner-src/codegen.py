@@ -214,7 +214,7 @@ def build():
     defs, body = [], []
 
     # ---- eyebrow
-    eb, _ = F["JetBrainsMono-600"].run("BUILDER · PILPICHACA, PERU → THE WORLD", 84, 58, 14, 3.4)
+    eb, _ = F["JetBrainsMono-600"].run("PERU → THE WORLD", 84, 58, 14, 3.4)
     body.append(f'<path d="{eb}" fill="{GOLD}"/>')
 
     # ---- name: filled always, gold outline traced by a moving clip
