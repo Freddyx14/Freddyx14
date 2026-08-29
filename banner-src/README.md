@@ -1,13 +1,13 @@
 # Banner source
 
-`banner.svg` is drawn entirely in code. No screenshot, no embedded photograph:
+`cover.svg` is drawn entirely in code. No screenshot, no embedded photograph:
 every mark in it is geometry.
 
 ```sh
 uv run --with uharfbuzz --with fonttools python codegen.py
 ```
 
-That writes `../assets/banner.svg`. Fonts are fetched and instanced on first run.
+That writes `../assets/cover.svg`. Fonts are fetched and instanced on first run.
 
 ## Why it is built this way
 

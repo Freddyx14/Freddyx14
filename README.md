@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="assets/banner.svg" alt="Freddy Ñañez. Builder. From Pilpichaca, Peru, to the world." width="100%">
+  <img src="assets/cover.svg" alt="Freddy Ñañez. From Peru to the world." width="100%">
 </div>
 
 <div align="center">

@@ -30,7 +30,7 @@ from fontTools.pens.transformPen import TransformPen
 from fontTools.misc.transform import Transform
 
 HERE = pathlib.Path(__file__).parent
-OUT = HERE.parent / "assets" / "banner.svg"
+OUT = HERE.parent / "assets" / "cover.svg"
 W, H = 1600, 500
 
 INK_DEEP = "#060606"
@@ -214,7 +214,7 @@ def build():
     defs, body = [], []
 
     # ---- eyebrow
-    eb, _ = F["JetBrainsMono-600"].run("PERU → THE WORLD", 84, 58, 14, 3.4)
+    eb, _ = F["JetBrainsMono-600"].run("FROM PERU TO THE WORLD", 84, 58, 14, 3.4)
     body.append(f'<path d="{eb}" fill="{GOLD}"/>')
 
     # ---- name: filled always, gold outline traced by a moving clip
@@ -294,7 +294,7 @@ def build():
 def main():
     defs, body = build()
     svg = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" role="img">
-<title>Freddy Nanez. Builder. From Pilpichaca, Peru, to the world.</title>
+<title>Freddy Nanez. From Peru to the world.</title>
 <defs>
   <radialGradient id="gRed" cx="76%" cy="108%" r="66%">
     <stop offset="0%" stop-color="{SCARLET}" stop-opacity=".62"/>
@@ -359,8 +359,9 @@ def main():
   <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;.14;.2;.38;.44;1" dur="7.5s" repeatCount="indefinite"/>
 </g>
 </svg>'''
+    OUT.parent.mkdir(exist_ok=True)
     OUT.write_text(svg)
-    print(f"banner.svg  {len(svg)/1024:.0f} KB   animaciones: {svg.count('<animate')}")
+    print(f"cover.svg   {len(svg)/1024:.0f} KB   animaciones: {svg.count('<animate')}")
 
 
 if __name__ == "__main__":
